@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { AuthGuard as AuthGuardService } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: '',
     redirectTo: 'admin/login',
-    pathMatch: 'full'
+    pathMatch: 'full' 
   },
   { path: 'admin/login', component: AdminLoginComponent},
-  { path: 'admin/home', component: AdminDashboardComponent}
+  { path: 'admin/home', component: AdminDashboardComponent,canActivate: [AuthGuardService]}
 ];
 
 @NgModule({

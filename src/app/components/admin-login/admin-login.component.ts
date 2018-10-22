@@ -59,7 +59,8 @@ export class AdminLoginComponent implements OnInit {
                       success:function(res){
                         console.log(res);
                         localStorage.setItem('token',res.id);
-                        window.location.replace("admin/home");  
+                        $(location).attr('href',"admin/home");
+                        // window.location.replace("admin/home");  
                       },
                       error:function(error){
                         console.log(error);

@@ -1,31 +1,29 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-expand-xm navbar-light bg-dark " style="background-image: linear-gradient(to bottom right,  #3399ff, #cccccc)"  >
+<nav class="navbar fixed-top navbar-expand-lg navbar-bg-color navbar-expand-xm navbar-light bg-dark "  >
   <div class="container-fluid">
       <h3 class="navbar-brand  text-white display-1  mr-5">fundooNotes</h3>
-          <h3 class="navbar-text  mr-auto text-white">
+          <h3 class="navbar-text d-none d-lg-block d-xl-block mr-auto text-white">
              Admin dashboard
-          </h3>   
+          </h3>  
+        <h6 class="text-danger"></h6>   
           <button id="logout" class="btn ml-auto  btn-outline-light my-2 " type="submit">Sign out</button> 
-  </div>
-  
+  </div> 
 </nav>
-
-<div class="container-fluid " style="margin-top:50px">
- 
+<div class="container-fluid container-mt">   
  <div class="container">
     <div class="row">
       
-        <div class="col-sm-5   ml-auto mr-auto"  style="margin-top:70px">
+        <div class="col-sm-5 ml-auto  mr-auto"  >
             <div class="row ml-auto mr-auto"  id="services"></div>
         </div>
       </div>
  </div>
     
       <div class="container  mt-5" >
-        <div class="card" style="background-image: linear-gradient(to bottom right, #9fbfdf,  #538cc6)">
-            <table id="example" class="table table-hover"  style="width:100%; ">
-                <thead >
+        <div class="card card-bg-color" >
+            <table id="table" class="table table-hover table-width" >
+                <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>S.No</th>
                         <th>First name</th>
                         <th>Last name</th>
                         <th>Email</th>
@@ -35,5 +33,31 @@
             </table>
         </div>
         
-      </div>       
-  </div>
+      </div> 
+<button type="button" id= "trigger"class="btn btn-primary btn-display" data-toggle="modal" data-target="#exampleModalCenter">
+      </button>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modal-bg-color" >
+            <div class="modal-header " >
+                 <h4 class="modal-title" id="fullName"></h4>
+            </div>
+            <div class="modal-body">
+                    <div id="name"></div>
+                    <div id="createdDate"></div>
+                    <div id="email"></div>
+                    <div id="phoneNumber"></div>
+                    <div id="role"></div>
+                    <div id="service"></div>   
+                    <div id="userName"></div>                  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  
+  

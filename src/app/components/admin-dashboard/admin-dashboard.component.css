@@ -1,0 +1,25 @@
+  .navbar-bg-color {
+    background-image: linear-gradient(to bottom right,  #3399ff, #cccccc)
+  }
+
+  .container-mt{
+    margin-top:100px
+  }
+
+  .card-bg-color {
+    background-image: linear-gradient(to bottom right, #9fbfdf,  #538cc6)
+  }
+
+  .table-width {
+    width:100%
+  }
+
+  .btn-display {
+    display:none
+  }
+
+  .modal-bg-color {    
+    background-image: linear-gradient(to bottom right,  #3399ff, #cccccc)
+  }
+
+  
