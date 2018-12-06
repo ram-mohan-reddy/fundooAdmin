@@ -1,0 +1,39 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-bg-color navbar-expand-xm navbar-light bg-dark "  >
+  <div class="container-fluid">
+      <h3 class="navbar-brand  text-white display-1  mr-5">fundooNotes</h3>
+          <h3 class="navbar-text d-none d-lg-block d-xl-block mr-auto text-white">
+             Question approval
+          </h3>  
+        <h6 class="text-danger"></h6>   
+          <button id="dashboard" class="btn ml-auto  btn-outline-light my-2 " type="submit">Dashboard</button> 
+  </div> 
+</nav>
+
+<div class="container-fluid container-mt" >
+  <div class="card card-bg-color" >
+      <table id="table" class="table  table-width table-word-break" >
+          <thead>
+              <tr>
+                  <th>S.No</th>
+                  <th>Question</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+      </table>
+  </div>
+</div> 
+
+<button type="button" id= "trigger" class="btn btn-primary btn-display" data-toggle="modal" data-target="#responseModal">
+  </button>
+  <div class="modal fade" id="responseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">    
+          <h5 class="modal-title text-success" id="response"></h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

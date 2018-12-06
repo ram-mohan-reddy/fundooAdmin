@@ -93,7 +93,11 @@ export class AdminDashboardComponent implements OnInit {
             $("h6").text("Unauthorized").show().fadeOut(5000);
           }
         });
-      });  
+      }); 
+      
+      $("#approval").click(function () {
+        $(location).attr('href',"admin/approval");
+      });
     });
   }
 }

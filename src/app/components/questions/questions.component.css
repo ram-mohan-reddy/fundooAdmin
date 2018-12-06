@@ -1,0 +1,41 @@
+.navbar-bg-color {
+    background-image: linear-gradient(to bottom right,  #3399ff, #cccccc)
+  }
+
+  .container-mt{
+    margin-top:200px
+  }
+ 
+  .card-bg-color {
+    background-image: linear-gradient(to bottom right, #9fbfdf,  #538cc6)
+  }
+
+  .table-width {
+    width:100%
+  }
+
+  .btn-display {
+    display:none
+  }
+
+  .modal-bg-color {    
+    background-image: linear-gradient(to bottom right,  #3399ff, #cccccc)
+  }
+
+  .table-word-break{
+    overflow-wrap:break-word;
+  }
+
+  table {
+    border-collapse:collapse; 
+    table-layout:fixed
+  }
+  table td {
+    /* border:solid 1px #fab; 
+    word-wrap:break-word; */
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word;
+    white-space: normal !important; 
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap;
+  }
